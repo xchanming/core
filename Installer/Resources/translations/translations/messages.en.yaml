@@ -1,0 +1,97 @@
+cicada.installer:
+    header_title: Setup
+    menuitem_language-selection: Start
+    menuitem_requirements: 'System requirements'
+    menuitem_database-configuration: 'Database configuration'
+    menuitem_database-import: Installation
+    menuitem_configuration: Configuration
+    menuitem_finish: Done
+    version_text: 'Version:'
+    back: Back
+    forward: Next
+    start: Start
+    start_installation: 'Start installation'
+    select_language_en: English (United Kingdom)
+    select_language_zh: Chinese (China)
+    select_country_chn: China
+    language-selection_welcome_title: 'Welcome to Cicada 6'
+    language-selection_select_language: 'Installation wizard language'
+    language-selection_header: 'Installation'
+    language-selection_info_message: 'The language selected here only applies to this installation wizard. If you like, you can specify another language for your shop later.'
+    language-selection_welcome_message: 'Welcome to Cicada 6! We are excited to guide you through the installation process step by step. If you encounter any issues along the way, feel free to explore our documentation or visit our forum for assistance. Let’s get started!'
+    requirements_header: 'System requirements'
+    requirements_header_files: 'Files and directories'
+    requirements_header_system: System
+    requirements_files_info: 'The following files and directories must be present and have write permissions.'
+    requirements_table_files_col_check: File/directory
+    requirements_table_files_col_status: Status
+    requirements_error: 'Not all of the requirements for successful installation have been met.'
+    requirements_error_title: 'Your system is not yet ready for Cicada 6'
+    requirements_success: 'All of the requirements for successful installation have been met.'
+    requirements_success_title: 'Your system is ready for Cicada 6'
+    requirements_php_info: 'Your server must meet the following system requirements in order to run Cicada.'
+    requirements_php_max_compatible_version: 'This Cicada version supports PHP up to version %s. There is no guarantee that everything will work with newer PHP versions.'
+    requirements_system_col_check: Requirement
+    requirements_system_col_required: Required
+    requirements_system_col_found: 'Your system'
+    requirements_system_col_status: Status
+    requirements_show_all: '(show all)'
+    requirements_hide_all: '(hide all)'
+    requirements_status_error: Error
+    requirements_status_warning: Warning
+    requirements_status_ready: Ready
+    database-configuration_header: 'Configure database'
+    database-configuration_field_host: 'Server:'
+    database-configuration_advanced_settings: 'Advanced settings'
+    database-configuration_field_port: 'Port:'
+    database-configuration_field_user: 'User:'
+    database-configuration_field_password: 'Password:'
+    database-configuration_field_database: 'Database name:'
+    database-configuration_field_new_database: 'New database:'
+    database-configuration_info: 'In order to install Cicada on your system, you will need the access credentials to your database. If you are not sure what to put here, contact your administrator/hosting service.'
+    database-configuration-create_new_database: 'Create new database'
+    database-configuration_non_empty_database: 'The selected database already contains data. Please select an empty database or create a new one from scratch.'
+    database-configuration_error_required_fields: 'Please fill in all the blanks.'
+    database-configuration_field_ssl_ca_path: 'SSL certificate authority path'
+    database-configuration_field_ssl_cert_path: 'SSL certificate path'
+    database-configuration_field_ssl_cert_key_path: 'SSL certificate key path'
+    database-configuration_field_ssl_dont_verify_cert: 'Don''t verify server certificate'
+    database-configuration_fetch_error: 'An error occurred while fetching the database information'
+    database-configuration_access_denied: 'Access denied, credentials are incorrect'
+    database-configuration_host_not_found: 'Could not connect to database server'
+    database-configuration_invalid_requirements: 'Cicada 6 requires at least MySQL 8.0.17 or MariaDB 10.11'
+    database-configuration_refresh_databases: 'Refresh Databases'
+    database-import_header: Installation
+    database-import_skip_import: Skip
+    database-import_progress: 'Progress: '
+    database-import-hint: '<strong>Note:</strong> If there are any Cicada tables found in the configured database, they will be removed by the installation/update!'
+    database-import_info_text: 'Installing Cicada 6 using the selected database. This process may take several minutes, depending on your overall system.'
+    database_import_success: 'Cicada 6 has been installed!'
+    database_import_install_label: 'Database installation:'
+    database_import_install_step_text: Step
+    database_import_install_from_text: of
+    migration_counter_text_migrations: 'Updating database'
+    migration_counter_text_snippets: 'Updating text snippets'
+    migration_update_success: 'Database has been imported!'
+    configuration_header: Configuration
+    configuration_sconfig_text: 'Almost done. You just need to make some few basic settings in your shop, Cicada 6 will be installed completely afterwards.'
+    configuration_sconfig_name: 'Shop name'
+    configuration_sconfig_name_info: 'Please enter the name of your shop.'
+    configuration_sconfig_mail: 'Shop email address:'
+    configuration_sconfig_mail_info: 'Please enter an email address for outgoing emails'
+    configuration_sconfig_domain: 'Shop domain:'
+    configuration_sconfig_language: 'Default system language:'
+    configuration_sconfig_currency: 'Default currency:'
+    configuration_sconfig_country: 'Default country:'
+    configuration_sconfig_currency_info: 'This currency will be used as the standard currency, everytime item prices are set.'
+    configuration_admin_currency_cny: 'CNY'
+    configuration_admin_currency_usd: 'Dollar (US)'
+    configuration_admin_username: 'Admin login name:'
+    configuration_admin_mail: 'Admin email:'
+    configuration_admin_name: 'Admin name:'
+    configuration_defaults_warning: 'Beware! The settings for your default system language as well as the default currency are permanent and cannot be changed ever again.'
+    configuration_admin_currency_headline: 'Available currencies'
+    configuration_admin_currency_text: 'Add more currencies to your Cicada shop. If you want to add currencies afterwards, you can create them at any time in the Administration.'
+    configuration_email_help_text: 'This email address will be used for outgoing shop emails.'
+    configuration_admin_password: 'Admin password:'
+
