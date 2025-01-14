@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xchanming/cicada/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title>Configuration</title>
+        <title lang="zh-CN">配置</title>
+
+        <input-field type="int">
+            <name>passwordMinLength</name>
+            <label>Minimum password length (log-in)</label>
+            <label lang="zh-CN">最小密码长度（登录）</label>
+        </input-field>
+    </card>
+
+</config>

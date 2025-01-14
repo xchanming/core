@@ -1,0 +1,27 @@
+{
+    "name": "{{ composerName }}",
+    "description": "{{ composerName }}",
+    "type": "cicada-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "cicada-ag/core": "~6.6.0"
+    },
+    "extra": {
+        "cicada-plugin-class": "{{ namespace }}\\{{ className }}",
+        "label": {
+            "zh-CN": "Skeleton plugin",
+            "en-GB": "Skeleton plugin"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "{{ namespace }}\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "{{ namespace }}\\Tests\\": "tests/"
+        }
+    }
+}
