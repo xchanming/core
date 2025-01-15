@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xchanming/cicada/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title>Log-in / sign-up</title>
+        <title lang="zh-CN">登录 / 注册</title>
+
+        <input-field type="int">
+            <name>passwordMinLength</name>
+            <label>Minimum password length on customer sign-up</label>
+            <label lang="zh-CN">客户注册密码最小长度</label>
+        </input-field>
+
+        <input-field type="bool">
+            <name>createCustomerAccountDefault</name>
+            <label>Create customer account by default</label>
+            <label lang="zh-CN">是否默认创建客户账号</label>
+            <helpText>If this setting is inactive, no customer account is created on the checkout page. The user then makes a purchase as a guest in the default setting.</helpText>
+            <helpText lang="zh-CN">如果此设置未激活，则在结账页面上不会创建客户账号。用户将以访客身份进行购买，这是默认设置。</helpText>
+        </input-field>
+
+        <input-field type="bool">
+            <name>customerIpAddressesNotAnonymously</name>
+            <label>Save customer IP addresses as plain text</label>
+            <label lang="zh-CN">是否明文形式客户的 IP 地址</label>
+        </input-field>
+
+        <input-field type="bool">
+            <name>requireCustomerAddress</name>
+            <label>Require customer address on registration</label>
+            <label lang="zh-CN">注册时必须填写地址信息</label>
+            <helpText>If this setting is active, customers are required to provide an address during registration. If inactive, the address is optional during registration.</helpText>
+            <helpText lang="zh-CN">如果此设置已激活，客户在注册时必须提供地址。如果未激活，地址在注册时为可选项。</helpText>
+        </input-field>
+
+        <input-field type="bool">
+            <name>requireEmailConfirmation</name>
+            <label>Email address must be entered twice</label>
+            <label lang="zh-CN">是否必须输入两次电子邮件地址</label>
+            <helpText>Email address has to be filled in twice to avoid errors.</helpText>
+            <helpText lang="zh-CN">为了避免错误，电子邮件地址必须填写两次。</helpText>
+            <hint>global.accessibility.optionWarning</hint>
+        </input-field>
+
+        <input-field type="bool">
+            <name>doubleOptInRegistration</name>
+            <label>Double opt-in on sign-up</label>
+            <label lang="zh-CN">是否注册时启用双重确认</label>
+            <helpText>Double opt-in for new customers.</helpText>
+            <helpText lang="zh-CN">新客户注册的时候启用双重确认</helpText>
+        </input-field>
+
+        <input-field type="bool">
+            <name>doubleOptInGuestOrder</name>
+            <label>Double opt-in on guest orders</label>
+            <label lang="zh-CN">是否启用游客订单双重确认</label>
+            <helpText>Activates double opt-in for guest orders.</helpText>
+            <helpText lang="zh-CN">启用游客订单双重确认</helpText>
+        </input-field>
+
+        <input-field type="text">
+            <name>confirmationUrl</name>
+            <label>Confirmation URL for double opt-in on sign-up</label>
+            <label lang="zh-CN">注册双重确认 URL</label>
+            <placeholder><![CDATA[/registration/confirm?em=%%HASHEDEMAIL%%&hash=%%SUBSCRIBEHASH%%]]></placeholder>
+            <helpText><![CDATA[Double opt-in URL for guest orders.<br/>Available placeholders: <br/>%%HASHEDEMAIL%%<br/>%%SUBSCRIBEHASH%%]]></helpText>
+            <helpText lang="zh-CN"><![CDATA[注册双重确认 URL.<br/>可用占位符: <br/>%%HASHEDEMAIL%%<br/>%%SUBSCRIBEHASH%%]]></helpText>
+        </input-field>
+
+        <input-field type="bool">
+            <name>requirePasswordConfirmation</name>
+            <label>Password must be entered twice</label>
+            <label lang="zh-CN">是否密码必须输入两次</label>
+            <helpText>Password has to be filled in twice to avoid input errors.</helpText>
+            <helpText lang="zh-CN">密码必须输入两次以避免输入错误。</helpText>
+        </input-field>
+
+        <input-field type="bool">
+            <name>titleFieldRequired</name>
+            <label>Require customer nick name</label>
+            <label lang="zh-CN">是否必须填写“昵称”字段</label>
+        </input-field>
+
+        <input-field type="bool">
+            <name>nameFieldRequire</name>
+            <label>Number field required</label>
+            <label lang="zh-CN">是否“姓名”字段必填</label>
+            <helpText>If this setting is activated, customers are required to provide their name during registration. If inactive, the name will be taken from the email field.</helpText>
+            <helpText lang="zh-CN">如果此设置已激活，客户在注册时必须填写姓名。如果未激活，姓名使用邮箱字段。</helpText>
+        </input-field>
+
+        <input-field type="bool">
+            <name>phoneNumberFieldRequired</name>
+            <label>Phone field required</label>
+            <label lang="zh-CN">是否必填”手机号“字段</label>
+        </input-field>
+
+        <input-field type="bool">
+            <name>showBirthdayField</name>
+            <label>Show birthday field</label>
+            <label lang="zh-CN">是否显示“生日”字段</label>
+        </input-field>
+
+        <input-field type="bool">
+            <name>birthdayFieldRequired</name>
+            <label>Birthday field required</label>
+            <label lang="zh-CN">注册是否必填“生日”字段</label>
+        </input-field>
+
+        <input-field type="bool">
+            <name>showAccountTypeSelection</name>
+            <label>Show selection between company and customer account</label>
+            <label lang="zh-CN">注册时是否显示公司账号与个人账号选择框</label>
+        </input-field>
+
+        <input-field type="bool">
+            <name>showAdditionalAddressField1</name>
+            <label>Show additional address field 1</label>
+            <label lang="zh-CN">是否显示附加地址1</label>
+        </input-field>
+
+        <input-field type="bool">
+            <name>additionalAddressField1Required</name>
+            <label>Additional address 1 field required</label>
+            <label lang="zh-CN">是否必填附加地址1</label>
+        </input-field>
+
+        <input-field type="bool">
+            <name>showAdditionalAddressField2</name>
+            <label>Show additional address field 2</label>
+            <label lang="zh-CN">是否显示附加地址2</label>
+        </input-field>
+
+        <input-field type="bool">
+            <name>additionalAddressField2Required</name>
+            <label>Additional address 2 field required</label>
+            <label lang="zh-CN">是否必填附加地址2</label>
+        </input-field>
+
+        <input-field type="bool">
+            <name>showZipcodeInFrontOfCity</name>
+            <label>Show ZIP code before city</label>
+            <label lang="zh-CN">是否将邮政编码显示在城市之前</label>
+        </input-field>
+
+        <input-field type="bool">
+            <name>invalidateSessionOnLogOut</name>
+            <label>Clear and delete cart on log-out</label>
+            <label lang="zh-CN">是否注销时清空并删除购物车</label>
+            <helpText>If activated, the cart won't be saved and can't be restored after logout.</helpText>
+            <helpText lang="zh-CN">如果启用，购物车将不会被保存，注销后无法恢复。</helpText>
+        </input-field>
+
+        <input-field type="bool">
+            <name>allowCustomerDeletion</name>
+            <label>Allow customer deletion</label>
+            <label lang="zh-CN">是否允许客户删除账号</label>
+        </input-field>
+
+        <input-field type="int">
+            <name>unusedGuestCustomerLifetime</name>
+            <label>Expiry time of guest customer accounts</label>
+            <label lang="zh-CN">游客账号过期时间</label>
+            <helpText>Time in seconds. Zero disables automatic deletion.</helpText>
+            <helpText lang="zh-CN">以秒为单位的时间。零表示禁用自动删除。</helpText>
+        </input-field>
+
+        <input-field type="bool">
+            <name>requireDataProtectionCheckbox</name>
+            <label>Data protection information must be accepted via a checkbox</label>
+            <label lang="zh-CN">是否必须通过复选框接受数据保护信息</label>
+        </input-field>
+
+        <input-field type="text">
+            <name>pwdRecoverUrl</name>
+            <label>Password recovery URL</label>
+            <label lang="zh-CN">密码恢复链接</label>
+            <placeholder><![CDATA[/account/recover/password?hash=%%RECOVERHASH%%]]></placeholder>
+            <helpText><![CDATA[Available placeholders: <br/>%%RECOVERHASH%%]]></helpText>
+            <helpText lang="zh-CN"><![CDATA[可用占位符: <br/>%%RECOVERHASH%%]]></helpText>
+        </input-field>
+
+        <input-field type="text">
+            <name>doubleOptInDomain</name>
+            <label>Double opt-in domain</label>
+            <label lang="zh-CN">双重确认域名</label>
+            <placeholder><![CDATA[https://localhost]]></placeholder>
+            <helpText>Leave empty to use this Sales Channel's domain.</helpText>
+            <helpText lang="zh-CN">留空以使用此销售渠道的域名。</helpText>
+        </input-field>
+    </card>
+</config>
