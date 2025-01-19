@@ -1,0 +1,47 @@
+{
+    "name": "swag/test",
+    "description": "Test description",
+    "version": "v1.0.1",
+    "type": "cicada-platform-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "cicada AG",
+            "role": "Manufacturer"
+        },
+        {
+            "name": "John Doe",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "cicada-ag/core": ">=6.0"
+    },
+    "extra": {
+        "cicada-plugin-class": "SwagTestPlugin\\SwagTestPlugin",
+        "plugin-icon": "src/Resources/public/plugin.png",
+        "copyright": "(c) by cicada AG",
+        "label": {
+            "zh-CN": "Chinese plugin name",
+            "de-CH": "Schweizerdeutsch Pluginname",
+            "en-GB": "English plugin name"
+        },
+        "description": {
+            "zh-CN": "Chinese description",
+            "en-GB": "English description"
+        },
+        "manufacturerLink": {
+            "zh-CN": "https://www.test.de/",
+            "en-GB": "https://www.test.com/"
+        },
+        "supportLink": {
+            "zh-CN": "https://www.test.de/support",
+            "en-GB": "https://www.test.com/support"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+           "SwagTestPlugin\\": "src"
+        }
+    }
+}

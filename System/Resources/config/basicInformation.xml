@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xchanming/cicada/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title>Basic information</title>
+        <title lang="zh-CN">常规设置</title>
+
+        <input-field>
+            <name>shopName</name>
+            <label>Shop name</label>
+            <label lang="zh-CN">商城名称</label>
+            <placeholder>Enter a shop name...</placeholder>
+            <placeholder lang="zh-CN">输入商城名称 ...</placeholder>
+        </input-field>
+
+        <input-field>
+            <name>email</name>
+            <label>Shop owner's email address</label>
+            <label lang="zh-CN">联系邮箱地址</label>
+            <placeholder>Enter email address...</placeholder>
+            <placeholder lang="zh-CN">输入商城邮箱地址...</placeholder>
+        </input-field>
+
+        <input-field type="text-editor">
+            <name>address</name>
+            <label>Shop owner's address</label>
+            <label lang="zh-CN">联系地址</label>
+            <placeholder>Enter address...</placeholder>
+            <placeholder lang="zh-CN">输入地址...</placeholder>
+        </input-field>
+    </card>
+
+    <card>
+        <title>Shop pages</title>
+        <title lang="zh-CN">Shopseiten</title>
+
+        <component name="sw-cms-page-select">
+            <name>tosPage</name>
+            <entity>cms_page</entity>
+            <pageType>page</pageType>
+            <label>Layout for GTC pages</label>
+            <label lang="zh-CN">>一般条款和条件页面</label>
+            <placeholder>Assign layout...</placeholder>
+            <placeholder lang="zh-CN">分配布局...</placeholder>
+        </component>
+
+        <component name="sw-cms-page-select">
+            <name>privacyPage</name>
+            <entity>cms_page</entity>
+            <pageType>page</pageType>
+            <label>Layout for privacy pages</label>
+            <label lang="zh-CN">隐私协议页面</label>
+            <placeholder>Assign layout...</placeholder>
+            <placeholder lang="zh-CN">分配布局...</placeholder>
+        </component>
+
+        <component name="sw-cms-page-select">
+            <name>http404Page</name>
+            <entity>cms_page</entity>
+            <pageType>page</pageType>
+            <label>Layout for 404 pages</label>
+            <label lang="zh-CN">404 页面</label>
+            <placeholder>Assign layout...</placeholder>
+            <placeholder lang="zh-CN">分配布局...</placeholder>
+        </component>
+
+        <component name="sw-cms-page-select">
+            <name>maintenancePage</name>
+            <entity>cms_page</entity>
+            <pageType>page</pageType>
+            <label>Shop page layout for maintenance pages</label>
+            <label lang="zh-CN">网站维护页面</label>
+            <placeholder>Select layout</placeholder>
+            <placeholder lang="zh-CN">分配布局</placeholder>
+        </component>
+
+        <component name="sw-cms-page-select">
+            <name>contactPage</name>
+            <entity>cms_page</entity>
+            <pageType>page</pageType>
+            <label>Shop page layout for contact pages</label>
+            <label lang="zh-CN">联系页面</label>
+            <placeholder>Assign layout...</placeholder>
+            <placeholder lang="zh-CN">分配布局...</placeholder>
+        </component>
+
+        <component name="sw-cms-page-select">
+            <name>newsletterPage</name>
+            <entity>cms_page</entity>
+            <pageType>page</pageType>
+            <label>Shop page layout for newsletter pages</label>
+            <label lang="zh-CN">邮件订阅页面</label>
+            <placeholder>Assign layout...</placeholder>
+            <placeholder lang="zh-CN">分配布局...</placeholder>
+        </component>
+
+    </card>
+
+    <card>
+        <title>Security and Privacy</title>
+        <title lang="zh-CN">安全与隐私</title>
+
+        <component name="sw-switch-field">
+            <name>useDefaultCookieConsent</name>
+            <bordered>bordered</bordered>
+            <label>Use default cookie notification</label>
+            <label lang="zh-CN">使用默认的 Cookie 通知</label>
+            <helpText>You should deactivate the default cookie notification only if you are using an alternative third-party solution.</helpText>
+            <helpText lang="zh-CN">只有在使用其他第三方解决方案时，您才应该禁用默认的 Cookie 通知。</helpText>
+        </component>
+
+        <component name="sw-switch-field">
+            <name>acceptAllCookies</name>
+            <bordered>bordered</bordered>
+            <label>Show "Accept all cookies" button</label>
+            <label lang="zh-CN">显示 "接受所有 cookies" 按钮</label>
+            <helpText>Shows a button which allows users to accept all cookies in the storefront</helpText>
+            <helpText lang="zh-CN">显示一个按钮，允许用户在前端接受所有 cookies</helpText>
+        </component>
+
+        <component name="sw-switch-field">
+            <name>nameFieldRequired</name>
+            <bordered>bordered</bordered>
+            <label>Name in contact forms required</label>
+            <label lang="zh-CN">联系表单中必填“姓名”</label>
+            <helpText>If active, the field "name" has to be filled in, in order to submit a contact form.</helpText>
+            <helpText lang="zh-CN">如果启用，"名字"字段必须填写才能提交联系表单</helpText>
+        </component>
+
+        <component name="sw-switch-field">
+            <name>phoneNumberFieldRequired</name>
+            <bordered>bordered</bordered>
+            <label>Phone number in contact forms required</label>
+            <label lang="zh-CN">联系表单中必填“手机号码”</label>
+            <helpText>If active, the field "phone number" has to be filled in, in order to submit a contact form.</helpText>
+            <helpText lang="zh-CN">如果启用，"手机号码"字段必须填写才能提交联系表单。</helpText>
+        </component>
+    </card>
+
+    <card>
+        <title>CAPTCHA</title>
+        <title lang="zh-CN">CAPTCHA</title>
+
+        <component name="sw-settings-captcha-select-v2">
+            <name>activeCaptchasV2</name>
+            <label>Active CAPTCHAS</label>
+            <label lang="zh-CN">启用 CAPTCHA</label>
+            <placeholder>None</placeholder>
+            <placeholder lang="zh-CN">无</placeholder>
+        </component>
+    </card>
+
+</config>
