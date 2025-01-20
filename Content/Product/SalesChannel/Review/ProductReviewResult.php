@@ -17,8 +17,6 @@ class ProductReviewResult extends EntitySearchResult
      * @deprecated tag:v6.7.0 - Will be natively typed
      *
      * @var string|null
-     *
-     * @deprecated tag:v6.7.0 - Will be natively typed
      */
     protected $parentId;
 
@@ -26,8 +24,6 @@ class ProductReviewResult extends EntitySearchResult
      * @deprecated tag:v6.7.0 - Will be natively typed
      *
      * @var string
-     *
-     * @deprecated tag:v6.7.0 - Will be natively typed
      */
     protected $productId;
 
@@ -35,8 +31,6 @@ class ProductReviewResult extends EntitySearchResult
      * @deprecated tag:v6.7.0 - Will be natively typed
      *
      * @var RatingMatrix
-     *
-     * @deprecated tag:v6.7.0 - Will be natively typed
      */
     protected $matrix;
 
@@ -44,17 +38,13 @@ class ProductReviewResult extends EntitySearchResult
      * @deprecated tag:v6.7.0 - Will be natively typed
      *
      * @var ProductReviewEntity|null
-     *
-     * @deprecated tag:v6.7.0 - Will be natively typed
      */
     protected $customerReview;
 
     /**
-     * @deprecated tag:v6.7.0 - Will be natively typed
+     * @deprecated tag:v6.7.0 - Will be removed
      *
      * @var int
-     *
-     * @deprecated tag:v6.7.0 - Will be natively typed
      */
     protected $totalReviews;
 
@@ -88,16 +78,6 @@ class ProductReviewResult extends EntitySearchResult
     public function setCustomerReview(?ProductReviewEntity $customerReview): void
     {
         $this->customerReview = $customerReview;
-    }
-
-    public function getTotalReviews(): int
-    {
-        return $this->totalReviews;
-    }
-
-    public function setTotalReviews(int $totalReviews): void
-    {
-        $this->totalReviews = $totalReviews;
     }
 
     public function getTotalReviewsInCurrentLanguage(): int
